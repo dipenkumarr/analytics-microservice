@@ -41,6 +41,7 @@ class EventUpdateSchema(SQLModel):
     description: str
 
 
-class EventListSchema(SQLModel):
-    results: List[EventModel]
+class EventBucketSchema(SQLModel):
+    bucket: datetime
+    page: str
     count: int
